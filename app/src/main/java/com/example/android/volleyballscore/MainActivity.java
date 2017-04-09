@@ -1,16 +1,5 @@
 
 
-/**
- * cele:
- * 1. wyświetla poprawny numer seta
- * 2. można podać nazwy drużyn, maks. 2 wiersze
- * 3. pokazuje punktację, najlepiej button ze zmieniającą się wartością
- * 4. button "undo"
- * 5. podaje zwycięzcę meczu
- * 6. podaje wynik poprzednich setów
- * 7. wie kiedy zakończyć seta
- */
-
 package com.example.android.volleyballscore;
 
 import android.os.Bundle;

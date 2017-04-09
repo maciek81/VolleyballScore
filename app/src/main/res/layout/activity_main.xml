@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center_vertical"
-                android:text="Volleyball Score"
+                android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textColor="#2b3b59"
                 android:textSize="32sp"
@@ -58,12 +58,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#c2e871"
+                    android:background="@color/bck_top"
                     android:gravity="end"
                     android:paddingBottom="8dp"
                     android:paddingRight="4dp"
                     android:paddingTop="8dp"
-                    android:text="Set:"
+                    android:text="@string/set"
                     android:textAllCaps="true"
                     android:textColor="#050505"
                     android:textSize="20sp"
@@ -74,11 +74,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#c2e871"
+                    android:background="@color/bck_top"
                     android:paddingBottom="8dp"
                     android:paddingLeft="4dp"
                     android:paddingTop="8dp"
-                    android:text="0"
+                    android:text="@string/starter_state"
                     android:textAllCaps="true"
                     android:textColor="#050505"
                     android:textSize="20sp"
@@ -115,7 +115,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:text="Team A"
+                    android:text="@string/team_a_name"
                     android:textColor="#616161"
                     android:textSize="14sp" />
 
@@ -126,7 +126,7 @@
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:paddingBottom="24dp"
-                    android:text="0"
+                    android:text="@string/starter_state"
                     android:textColor="#000000"
                     android:textSize="56sp" />
 
@@ -141,7 +141,7 @@
                         android:layout_marginLeft="24dp"
                         android:layout_marginRight="16dp"
                         android:onClick="addOneForTeamA"
-                        android:text="+"
+                        android:text="@string/btn_plus"
                         android:textSize="20sp" />
 
                     <Button
@@ -152,7 +152,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="24dp"
                         android:onClick="removeOneFromTeamA"
-                        android:text="-"
+                        android:text="@string/btn_minus"
                         android:textSize="20sp" />
                 </RelativeLayout>
 
@@ -163,7 +163,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="Timeouts taken:"
+                    android:text="@string/timeouts"
                     android:textColor="#616161"
                     android:textSize="14sp" />
 
@@ -174,7 +174,7 @@
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:paddingBottom="8dp"
-                    android:text="0"
+                    android:text="@string/starter_state"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
@@ -185,7 +185,7 @@
                     android:layout_marginLeft="48dp"
                     android:layout_marginRight="48dp"
                     android:onClick="timeoutForTeamA"
-                    android:text="Timeout!"
+                    android:text="@string/btn_timeout"
                     android:textSize="12sp" />
 
 
@@ -211,7 +211,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:text="Team B"
+                    android:text="@string/team_b_name"
                     android:textColor="#616161"
                     android:textSize="14sp" />
 
@@ -222,7 +222,7 @@
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:paddingBottom="24dp"
-                    android:text="0"
+                    android:text="@string/starter_state"
                     android:textColor="#000000"
                     android:textSize="56sp" />
 
@@ -237,7 +237,7 @@
                         android:layout_marginLeft="24dp"
                         android:layout_marginRight="16dp"
                         android:onClick="addOneForTeamB"
-                        android:text="+"
+                        android:text="@string/btn_plus"
                         android:textSize="20sp" />
 
                     <Button
@@ -248,7 +248,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginRight="24dp"
                         android:onClick="removeOneFromTeamB"
-                        android:text="-"
+                        android:text="@string/btn_minus"
                         android:textSize="20sp" />
                 </RelativeLayout>
 
@@ -258,9 +258,10 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="Timeouts taken:"
+                    android:text="@string/timeouts"
                     android:textColor="#616161"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:id="@+id/textView" />
 
                 <TextView
                     android:id="@+id/timeoutB"
@@ -269,7 +270,7 @@
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:paddingBottom="8dp"
-                    android:text="0"
+                    android:text="@string/starter_state"
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
@@ -280,7 +281,7 @@
                     android:layout_marginLeft="48dp"
                     android:layout_marginRight="48dp"
                     android:onClick="timeoutForTeamB"
-                    android:text="Timeout!"
+                    android:text="@string/btn_timeout"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -300,7 +301,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:paddingLeft="32dp"
-                android:text="Team A:"
+                android:text="@string/team_a_name_v2"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -311,7 +312,7 @@
                 android:layout_weight="1"
                 android:gravity="start"
                 android:paddingLeft="12dp"
-                android:text="0"
+                android:text="@string/starter_state"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -320,35 +321,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamAsetTwoScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamAsetThreeScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamAsetFourScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamAsetFiveScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
         </LinearLayout>
 
         <LinearLayout
@@ -365,7 +366,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:paddingLeft="32dp"
-                android:text="Team B:"
+                android:text="@string/team_b_name_v2"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -376,7 +377,7 @@
                 android:layout_weight="1"
                 android:gravity="start"
                 android:paddingLeft="12dp"
-                android:text="0"
+                android:text="@string/starter_state"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -385,35 +386,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamBsetTwoScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamBsetThreeScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamBsetFourScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
 
             <TextView
                 android:id="@+id/teamBsetFiveScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="@string/points_in_set" />
         </LinearLayout>
 
         <View
@@ -432,7 +433,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
             android:onClick="resetScores"
-            android:text="reset" />
+            android:text="@string/btn_reset" />
 
         <View
             android:id="@+id/kreska3"

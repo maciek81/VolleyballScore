@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Volleyball Score</string>
+    <string name="starter_state">0</string>
+    <string name="set">Set</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">-</string>
+    <string name="timeouts">Timeouts taken:</string>
+    <string name="btn_timeout">Timeout!</string>
+    <string name="team_a_name_v2">Team A:</string>
+    <string name="team_b_name_v2">Team B:</string>
+    <string name="points_in_set">-</string>
+    <string name="btn_reset">Reset</string>
 </resources>
