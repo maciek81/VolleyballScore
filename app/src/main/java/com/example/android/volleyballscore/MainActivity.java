@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         overallSetNumber(setNumber);
     }
-
     /**
      * Increase the score for Team A by 1 point.
      */
